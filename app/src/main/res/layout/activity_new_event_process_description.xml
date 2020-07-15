@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="20dp"
+    android:gravity="center_vertical"
+    android:orientation="vertical"
+    android:layout_marginRight="20dp"
+    android:layout_marginBottom="20dp"
+    >
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:text="Simple Steps To Add A Hotel  :)"
+        android:fontFamily="@font/azo"
+        android:textStyle="bold"
+        android:textColor="#000"
+        android:textSize="17sp"
+        android:layout_marginBottom="30dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:text="1. Add basic details."
+        android:fontFamily="@font/azo"
+        android:layout_margin="10dp"
+        android:textSize="15sp"
+        android:layout_gravity="center_horizontal"
+        android:layout_height="wrap_content" />
+
+    <TextView
+    android:layout_width="match_parent"
+    android:layout_margin="10dp"
+    android:text="2. One or more FAQs."
+    android:fontFamily="@font/azo"
+
+    android:textSize="15sp"
+    android:layout_gravity="center_horizontal"
+    android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_margin="10dp"
+        android:text="3. Managers details"
+        android:fontFamily="@font/azo"
+
+        android:textSize="15sp"
+        android:layout_gravity="center_horizontal"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_margin="10dp"
+        android:text="4. Upload one or more hotel photos."
+        android:fontFamily="@font/azo"
+
+        android:textSize="15sp"
+        android:layout_gravity="center_horizontal"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_margin="10dp"
+        android:text="5. Add Rooms."
+        android:fontFamily="@font/azo"
+        android:textSize="15sp"
+        android:layout_gravity="center_horizontal"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_margin="10dp"
+        android:text="That's it."
+        android:fontFamily="@font/azo"
+        android:textSize="15sp"
+        android:layout_gravity="center_horizontal"
+        android:layout_height="wrap_content" />
+
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_marginTop="20dp"
+        android:indeterminate="false"
+        android:max="100"
+        android:progress="0"
+        android:progressTint="@color/black"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:text="PROCEED"
+        android:id="@+id/proceed"
+        android:layout_marginTop="10dp"
+        android:textSize="17sp"
+        android:layout_gravity="right"
+        android:background="@drawable/chat_sdk_anonymous_extended"
+        android:layout_height="wrap_content" />
+
+
+
+
+
+
+
+
+</LinearLayout>

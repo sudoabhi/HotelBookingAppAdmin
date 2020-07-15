@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:padding="15dp"
+    android:layout_margin="5dp"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:textColor="#000"
+        android:textSize="16sp"
+        android:fontFamily="@font/azo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Post"/>
+
+    <EditText
+
+        android:id="@+id/subject"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/editbox2"
+        android:foreground="#85d6d6d6"
+        android:padding="10dp"
+        android:inputType="textMultiLine"
+        android:layout_marginBottom="10dp"/>
+
+
+
+</LinearLayout>

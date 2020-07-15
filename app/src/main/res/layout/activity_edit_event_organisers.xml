@@ -1,0 +1,311 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#fff"
+        android:elevation="8dp"
+        android:orientation="horizontal">
+
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="wrap_content"
+            android:layout_height="?attr/actionBarSize"
+            android:layout_weight="5"
+            app:navigationIcon="@drawable/ic_back"
+            android:background="@android:color/transparent"
+            app:popupTheme="@style/PopupOverlay"
+            app:title="Edit Hotel Managers">
+
+
+        </android.support.v7.widget.Toolbar>
+
+        <TextView
+            android:id="@+id/next"
+            android:layout_width="wrap_content"
+            android:layout_height="32dp"
+            android:layout_weight="1"
+            android:elevation="8dp"
+            android:text="Save"
+            android:textSize="17sp"
+            android:layout_gravity="center_vertical"
+            android:gravity="center"
+            android:textColor="#000"
+            android:layout_marginEnd="4dp"
+            android:foreground="#20000000"
+            android:background="?selectableItemBackgroundBorderless"
+            android:clickable="true" />
+
+    </LinearLayout>
+
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:id="@+id/big_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/inner_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="8dp"
+                    android:layout_marginTop="20dp"
+
+                    android:padding="5dp"
+                    android:text="Previously Added Managers:"
+                    android:textColor="#000000"
+                    android:textSize="18sp" />
+
+
+                <ProgressBar
+                    android:id="@+id/progressBar"
+                    style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:indeterminate="true"
+                    android:indeterminateTint="#000" />
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/rvOrganisersOld"
+                    android:scrollbars="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"/>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="12dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="16dp"
+                    android:padding="5dp"
+                    android:text="Add New Manager"
+                    android:textColor="#000000"
+                    android:textSize="18sp" />
+
+                <RelativeLayout
+                    android:id="@+id/pic_layout"
+                    android:foreground="?selectableItemBackground"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal">
+
+                    <ProgressBar
+                        android:id="@+id/progressBarCircle"
+                        style="?android:attr/progressBarStyle"
+                        android:indeterminateTint="#000"
+                        android:layout_centerVertical="true"
+                        android:elevation="2dp"
+                        android:layout_marginStart="30dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <ImageView
+                        android:id="@+id/image_organiser"
+                        android:layout_width="105dp"
+                        android:layout_height="120dp"
+                        android:foreground="?selectableItemBackground"
+                        android:layout_gravity="center_horizontal"
+                        android:src="@drawable/addphoto3" />
+
+                    <TextView
+                        android:id="@+id/aaaaa"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginTop="92dp"
+                        android:gravity="center_horizontal"
+                        android:text="Add Photo"
+                        android:textColor="#000"
+                        android:textSize="14sp" />
+                </RelativeLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/eventinput1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="16dp"
+                    android:background="@drawable/editbox2"
+                    android:foreground="#85d6d6d6">
+
+                    <android.support.design.widget.TextInputEditText
+                        android:id="@+id/organiser_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginBottom="8dp"
+                        android:background="@null"
+                        android:hint="Name *"
+                        android:imeOptions="actionNext"
+                        android:inputType="textPersonName"
+                        android:textColor="#000"
+                        android:textColorHighlight="#70000000"
+                        android:textColorHint="#70000000"
+                        android:textSize="18sp" />
+
+                </android.support.design.widget.TextInputLayout>
+
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/eventinput2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="16dp"
+                    android:background="@drawable/editbox2"
+                    android:foreground="#85d6d6d6">
+
+                    <android.support.design.widget.TextInputEditText
+                        android:id="@+id/organiser_role"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginBottom="8dp"
+                        android:background="@null"
+                        android:hint="Role *"
+                        android:imeOptions="actionNext"
+                        android:inputType="textCapWords"
+                        android:textColor="#000"
+                        android:textColorHighlight="#70000000"
+                        android:textColorHint="#70000000"
+                        android:textSize="18sp" />
+
+                </android.support.design.widget.TextInputLayout>
+
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/eventinput3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="16dp"
+                    android:background="@drawable/editbox2"
+                    android:foreground="#85d6d6d6">
+
+                    <android.support.design.widget.TextInputEditText
+                        android:id="@+id/organiser_email"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginBottom="8dp"
+                        android:background="@null"
+                        android:hint="Email *"
+                        android:imeOptions="actionNext"
+                        android:inputType="textEmailAddress"
+                        android:textColor="#000"
+                        android:textColorHighlight="#70000000"
+                        android:textColorHint="#70000000"
+                        android:textSize="18sp" />
+
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/eventinput4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="16dp"
+                    android:background="@drawable/editbox2"
+                    android:foreground="#85d6d6d6">
+
+                    <android.support.design.widget.TextInputEditText
+                        android:id="@+id/organiser_phone"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginBottom="8dp"
+                        android:background="@null"
+                        android:hint="Phone *"
+                        android:imeOptions="actionDone"
+                        android:inputType="phone"
+                        android:maxLength="10"
+                        android:textColor="#000"
+                        android:textColorHighlight="#70000000"
+                        android:textColorHint="#70000000"
+                        android:textSize="18sp" />
+
+                </android.support.design.widget.TextInputLayout>
+            </LinearLayout>
+
+
+
+            <Button
+                android:id="@+id/button2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:background="?selectableItemBackground"
+                android:foreground="@drawable/roundx"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="15dp"
+                android:text="Add"
+                android:textColor="#95000000" />
+
+
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rvOrganisers"
+                android:scrollbars="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:background="@null"
+                />
+
+
+
+        </LinearLayout>
+
+
+
+
+    </android.support.v4.widget.NestedScrollView>
+
+
+
+
+</LinearLayout>
+

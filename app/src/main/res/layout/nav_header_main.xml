@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:gravity="bottom"
+    android:layout_marginTop="25dp"
+    android:orientation="vertical"
+    android:background="#55d6d6d6"
+    android:theme="@style/ThemeOverlay.AppCompat.Dark">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        android:textSize="22sp"
+        android:text="HotelLo Admin"
+        android:textColor="#1f2f3f"
+        android:fontFamily="@font/azo"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.6dp"
+        android:layout_marginTop="16dp"
+        android:background="#50000000" />
+
+</LinearLayout>

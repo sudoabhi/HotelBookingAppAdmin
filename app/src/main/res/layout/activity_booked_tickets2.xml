@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    >
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="4dp"
+        android:theme="@style/AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="#fff"
+            app:popupTheme="@style/PopupOverlay" />
+
+
+
+    </android.support.design.widget.AppBarLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:id="@+id/LL_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:id="@+id/headings"
+                android:orientation="horizontal"
+                android:padding="8dp"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/heading_title"
+                    android:layout_width="wrap_content"
+
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:layout_marginStart="15dp"
+                    android:textSize="16sp"
+                    android:text="Total bookings"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/heading_count"
+                    android:layout_width="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:textSize="16sp"
+                    android:text="0"
+                    android:layout_height="wrap_content" />
+
+                <!-- <TextView
+                     android:layout_weight="1"
+                     android:layout_margin="5dp"
+                     android:layout_gravity="center_horizontal"
+                     android:gravity="center"
+                     android:layout_width="0dp"
+                     android:textStyle="bold"
+                     android:textSize="18sp"
+                     android:text="Ticket Details"
+                     android:layout_height="wrap_content" />-->
+
+            </LinearLayout>
+
+
+
+            <View
+                android:layout_width="match_parent"
+                android:background="#000"
+                android:layout_height="1dp"/>
+
+
+
+
+            <android.support.v7.widget.RecyclerView
+                android:layout_width="wrap_content"
+                android:id="@+id/my_recycler_view"
+                android:layout_height="wrap_content">
+
+
+            </android.support.v7.widget.RecyclerView>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:visibility="invisible"
+            android:id="@+id/LL_notickets"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_gravity="center"
+                android:layout_marginTop="150dp"
+                android:layout_marginBottom="10dp"
+                android:layout_width="wrap_content"
+                android:background="@drawable/ic_dizzy"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:text="No Tickets Booked!"
+                android:gravity="center_horizontal"
+                android:fontFamily="@font/azo"
+                android:textStyle="bold"
+                android:id="@+id/error_text"
+                android:textSize="21sp"
+                android:layout_margin="10dp"
+                android:layout_height="wrap_content" />
+
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+
+
+</LinearLayout>

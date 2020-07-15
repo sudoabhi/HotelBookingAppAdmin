@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@null"
+    android:fillViewport="true"
+    android:fitsSystemWindows="true">
+
+
+
+
+    <RelativeLayout
+
+        android:id="@+id/outer"
+        android:background="@null"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+
+
+        <RelativeLayout
+            android:id="@+id/inner1"
+            android:minHeight="350dp"
+            android:background="#df6ca1c8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+
+
+            <Button
+                android:id="@+id/cross_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="6dp"
+                android:background="@null"
+                android:drawableStart="@drawable/ic_clear"
+                android:drawableTint="#fff" />
+
+            <TextView
+                android:id="@+id/welcometv"
+                android:layout_below="@+id/cross_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:fontFamily="@font/azo"
+                android:gravity="center_horizontal"
+                android:text="Welcome to HotelLo"
+                android:textColor="#fff"
+
+                android:textSize="30sp" />
+
+            <TextView
+                android:id="@+id/txtlogin"
+                android:layout_below="@+id/welcometv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="6dp"
+                android:gravity="center_horizontal"
+                android:text="Create a new account"
+                android:textColor="#fff"
+                android:textSize="20sp" />
+
+            <ProgressBar
+                android:id="@+id/progress"
+                android:layout_below="@+id/txtlogin"
+                style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:indeterminate="true"
+                android:indeterminateTint="#FFF"
+                android:layout_marginTop="30dp"/>
+
+
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_below="@+id/inner1"
+            android:id="@+id/inner2"
+            android:minHeight="350dp"
+            android:background="#6ca1c8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/input"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginTop="20dp"
+                android:textColorHint="#fff"
+                app:hintTextAppearance="@style/HintText">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/et_email"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:background="@android:color/transparent"
+                    android:drawableEnd="@drawable/ic_person_black_24dp"
+                    android:drawableTint="#fff"
+                    android:foreground="@drawable/editbox"
+                    android:hint="Email"
+                    android:textColorHint="#fff"
+                    android:imeOptions="actionNext"
+                    android:inputType="textEmailAddress"
+                    android:minLines="1"
+                    android:maxLines="1"
+                    android:padding="10dp"
+                    android:paddingStart="10dp"
+                    android:textColor="#ffffff" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/input2"
+                android:layout_below="@+id/input"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginTop="15dp"
+                android:textColorHint="#fff"
+                app:hintTextAppearance="@style/HintText">
+
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/et_password"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:background="@android:color/transparent"
+                    android:drawableEnd="@drawable/ic_lock_black_24dp"
+                    android:drawableTint="#fff"
+                    android:foreground="@drawable/editbox"
+                    android:hint="Password"
+                    android:minLines="1"
+                    android:maxLines="1"
+                    android:imeOptions="actionDone"
+                    android:inputType="textPassword"
+                    android:padding="10dp"
+                    android:paddingStart="10dp"
+                    android:textColor="#ffffff" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <TextView
+                android:id="@+id/txt"
+                android:layout_below="@+id/input2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:text="hello"
+                android:visibility="gone"
+                android:gravity="center"
+                android:textSize="18sp"
+                android:textColor="#fff"/>
+
+            <android.support.v7.widget.CardView
+                android:layout_below="@+id/txt"
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginTop="60dp"
+                card_view:cardElevation="8dp"
+                card_view:cardBackgroundColor="@android:color/transparent"
+                android:backgroundTint="@android:color/transparent"
+                android:background="@null">
+
+                <Button
+                    android:id="@+id/btn_register"
+                    android:background="@drawable/round2"
+                    android:foreground="?selectableItemBackgroundBorderless"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:text="Get Started"
+                    android:textSize="20sp"
+                    android:textColor="@color/disable_button_text"/>
+
+            </android.support.v7.widget.CardView>
+
+
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+
+</ScrollView>
+
+
+

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.hotelloadmin.ddxr.UserFragments.MainUserActivity">
+
+    <item
+        android:id="@+id/action_notification1"
+        android:icon="@drawable/ic_more_vert_black_24dp"
+        android:title="action_notification"
+        app:showAsAction="always">
+        <menu>
+          <!--  <item
+                android:id="@+id/copy_topic_link"
+
+                android:orderInCategory="100"
+                android:title="Copy topic link" />-->
+
+            <item
+                android:id="@+id/edit"
+
+                android:orderInCategory="100"
+                android:title="Edit this request" />
+
+            <item
+                android:id="@+id/delete"
+
+                android:orderInCategory="100"
+                android:title="Delete this request" />
+
+
+
+
+
+
+        </menu>
+    </item>
+
+</menu>

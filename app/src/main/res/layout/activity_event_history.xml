@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@null"
+    android:fitsSystemWindows="true"
+    tools:openDrawer="start">
+
+    <!--<include
+        layout="@layout/app_bar_event_history"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />-->
+
+    <android.support.design.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".EventsPackage.EventsHistoryActivity">
+
+        <android.support.design.widget.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:elevation="4dp"
+            android:theme="@style/AppBarOverlay">
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="#fff"
+                app:title="Hotels History"
+                app:popupTheme="@style/PopupOverlay" />
+
+
+
+        </android.support.design.widget.AppBarLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@null"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+            <TextView
+                android:id="@+id/awesome_event_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="90dp"
+                android:gravity="center"
+                android:visibility="invisible"
+                android:textSize="18sp"
+                android:textColor="#000"
+                android:textStyle="bold"
+                android:fontFamily="@font/azo"
+                android:text="It's an awesome hotel name!" />
+
+
+            <TextView
+                android:id="@+id/no_event_found"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="150dp"
+                android:textSize="15sp"
+                android:visibility="invisible"
+                android:textColor="#99000000"
+                android:fontFamily="@font/azo"
+                android:gravity="center"
+                android:text="But we can't seem to find one in your list. :(\nAdd Now!" />
+
+            <Button
+                android:id="@+id/create_new"
+                android:layout_width="170dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="12dp"
+                android:visibility="invisible"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@id/no_event_found"
+                android:textColor="#fff"
+                android:textAllCaps="false"
+                android:background="@drawable/round3"
+                android:foreground="?selectableItemBackground"
+                android:text="Add Hotel!"
+                android:textSize="16sp"/>
+
+            <TextView
+                android:id="@+id/or_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:textColor="#000"
+                android:visibility="invisible"
+                android:layout_marginBottom="100dp"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:fontFamily="@font/azo"
+                android:gravity="center"
+                android:text="Or you can" />
+
+            <Button
+                android:id="@+id/contact_us"
+                android:layout_width="150dp"
+                android:layout_height="40dp"
+                android:layout_marginBottom="50dp"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:text="Contact Us"
+                android:foreground="?selectableItemBackground"
+                android:textSize="16sp"
+                android:visibility="invisible"
+                android:textColor="#fff"
+                android:textAllCaps="false"
+                android:background="#19C2E9"/>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/my_recycler_view"
+                android:background="#99d6d6d6"
+                android:scrollbars="vertical"
+                android:paddingTop="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+        </RelativeLayout>
+
+
+
+    </android.support.design.widget.CoordinatorLayout>
+
+    <android.support.design.widget.NavigationView
+        android:id="@+id/nav_view"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:fitsSystemWindows="true"
+        app:headerLayout="@layout/nav_header_main"
+        app:menu="@menu/activity_main_drawer"
+        app:itemIconTint="#000"
+        app:itemTextColor="#000"
+        app:itemBackground="@android:color/transparent"/>
+
+</android.support.v4.widget.DrawerLayout>

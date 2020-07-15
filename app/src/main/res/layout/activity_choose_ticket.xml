@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+
+    android:layout_height="match_parent">
+
+
+
+
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:visibility="gone"
+    android:id="@+id/LL_layout"
+    android:layout_height="match_parent"
+    >
+
+    <android.support.v7.widget.Toolbar
+        android:background="#fff"
+        android:id="@+id/toolbar"
+        app:navigationIcon="@drawable/ic_arrow_back_black_24dp"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_width="match_parent"
+        >
+
+    </android.support.v7.widget.Toolbar>
+
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.v7.widget.RecyclerView
+            android:layout_marginTop="5dp"
+            android:layout_width="wrap_content"
+            android:id="@+id/my_recycler_view"
+            android:layout_height="wrap_content">
+
+
+        </android.support.v7.widget.RecyclerView>
+
+
+
+
+
+    </FrameLayout>
+
+
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:text="PROCEED"
+        android:id="@+id/proceed"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/azo"
+        android:layout_gravity="center_horizontal"
+        android:layout_alignParentRight="true"
+        android:textSize="16sp"
+        android:background="@drawable/chat_sdk_anonymous_extended"
+        android:layout_height="wrap_content" />
+
+
+
+
+
+
+
+
+
+</LinearLayout>
+
+
+    <ProgressBar
+
+        android:id="@+id/top_progress_bar"
+        style="?android:attr/progressBarStyle"
+        android:indeterminateTint="@color/black"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+
+        android:layout_marginTop="10dp"
+        />
+
+</FrameLayout>

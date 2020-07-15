@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp" >
+
+
+    <EditText
+        android:id="@+id/edit_bio"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:lines="8"
+        android:gravity="top"
+        android:padding="10dp"
+        android:textColor="#000"
+        android:textSize="15sp"
+        android:background="@null"
+        android:imeOptions="actionDone"
+        android:inputType="textMultiLine">
+
+        <requestFocus />
+
+    </EditText>
+
+</LinearLayout>

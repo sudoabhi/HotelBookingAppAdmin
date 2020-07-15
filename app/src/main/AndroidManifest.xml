@@ -1,0 +1,322 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    package="com.example.hotelloadmin">
+
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <uses-feature android:name="android.hardware.camera" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <service
+            android:name=".SignUpPackage.DataService2"
+            android:enabled="true"
+            android:exported="false" />
+        <service
+            android:name=".SignUpPackage.DataService3"
+            android:enabled="true"
+            android:exported="false" />
+
+        <activity
+            android:name=".IntroPackage.SplashActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/SplashTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".CommonPackage.AboutActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoStatus" />
+        <activity
+            android:name=".CommonPackage.AppFAQsActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoStatus" />
+        <activity
+            android:name=".CommonPackage.ContactUsActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoStatus" />
+        <activity
+            android:name=".CommonPackage.FeedbackActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoStatus" />
+        <activity
+            android:name=".CommonPackage.ReportBugActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoStatus" />
+        <activity
+            android:name=".CommonPackage.PrivacyTermsActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoStatus" />
+        <activity
+            android:name=".HomePackage.MainActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoStatus" />
+        <activity
+            android:name=".IntroPackage.MailActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoStatus" />
+        <activity
+            android:name=".EventsPackage.EventsHistoryActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoStatus"
+            android:windowSoftInputMode="adjustPan">
+            <meta-data
+                android:name="android.app.searchable"
+                android:resource="@xml/searchable" />
+
+            <intent-filter>
+                <action android:name="android.intent.action.SEARCH" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".IntroPackage.PasswordActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoStatus" />
+        <activity
+            android:name=".IntroPackage.ScreenActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoStatus" />
+        <activity
+            android:name=".SignUpPackage.ScreenSlidePagerActivity2"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".SignUpPackage.ScreenSlidePagerActivity3"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".IntroPackage.RegsiterActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoStatus" />
+        <activity
+            android:name=".IntroPackage.SelectorActivity"
+            android:theme="@style/NoStatus"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".SignUpPackage.WelcomeActivity"
+            android:theme="@style/NoStatus"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".EventsPackage.EventDetails"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoStatus">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="hungryhunter96.github.io"
+                    android:pathPattern="/share_event"
+                    android:scheme="http" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".EventsPackage.EditEventDetails"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoStatus" />
+        <activity
+            android:name=".EventsPackage.EditEventFAQs"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoStatus" />
+        <activity
+            android:name=".EventsPackage.EditEventOrganisers"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoStatus" />
+        <activity
+            android:name=".EventsPackage.EditEventTickets"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoStatus" />
+        <activity
+            android:name=".EventsPackage.EditEventBanner"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoStatus" />
+        <activity
+            android:name=".EventsPackage.EventAnalytics"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoStatus" />
+        <activity
+            android:name="com.journeyapps.barcodescanner.CaptureActivity"
+            android:screenOrientation="portrait"
+            tools:replace="screenOrientation" />
+        <activity
+            android:name=".ScannerPackage.ScannerActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoStatus" />
+        <activity
+            android:name=".ScannerPackage.BookedTicketsSolo"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan"
+            android:theme="@style/NoStatus">
+
+            <meta-data
+                android:name="android.app.searchable"
+                android:resource="@xml/searchable" />
+
+            <intent-filter>
+                <action android:name="android.intent.action.SEARCH" />
+            </intent-filter>
+
+        </activity>
+
+        <activity
+            android:name=".ScannerPackage.BookedTicketsTeam"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan"
+            android:theme="@style/NoStatus" >
+
+            <meta-data
+                android:name="android.app.searchable"
+                android:resource="@xml/searchable" />
+
+            <intent-filter>
+                <action android:name="android.intent.action.SEARCH" />
+            </intent-filter>
+
+        </activity>
+
+        <activity
+            android:name=".ScannerPackage.ErrorActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoStatus" />
+        <activity
+            android:name=".EventsPackage.EventDetailsOrganisersActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoStatus" />
+        <activity
+            android:name=".EventsPackage.EventDetailsFAQsActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoStatus" />
+        <activity
+            android:name=".EventsPackage.EventDetailsTicketsActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoStatus" />
+        <activity
+            android:name=".EventsPackage.EventDetailsPostersActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoStatus" />
+
+
+
+
+        <activity
+            android:name=".DiscussionsPackage.BlogFeedActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoStatus" />
+        <activity
+            android:name=".DiscussionsPackage.BlogActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoStatus" />
+        <activity
+            android:name=".DiscussionsPackage.AddPost"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoStatus" />
+        <activity
+            android:name=".DiscussionsPackage.ParticipantsList"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoStatus" />
+        <activity
+            android:name=".DiscussionsPackage.LikeCommentParticipant"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoStatus" />
+        <activity
+            android:name=".EventsPackage.EventDiscussions"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoStatus" />
+        <activity
+            android:name=".PaymentsActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoStatus" />
+
+        <activity android:name=".StudentsList.InterestedStudents"
+            android:theme="@style/NoStatus"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".SignUpPackage.RegistrationClub1"
+            android:theme="@style/NoStatus"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".SignUpPackage.RegistrationClub2"
+            android:theme="@style/NoStatus"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".SignUpPackage.RegistrationClub3"
+            android:theme="@style/NoStatus"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".SignUpPackage.RegistrationClub4"
+            android:theme="@style/NoStatus"
+            android:screenOrientation="portrait" />
+
+
+        <activity android:name=".StudentsList.InterestedPeople"
+            android:theme="@style/NoStatus"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".StudentsList.PeopleClick"
+            android:theme="@style/NoStatus"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".NewEventPackage.NewEventActivity0"
+            android:theme="@style/NoStatus"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".NewEventPackage.NewEventActivity1"
+            android:theme="@style/NoStatus"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".NewEventPackage.NewEventActivity2"
+            android:theme="@style/NoStatus"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".NewEventPackage.NewEventActivity3"
+            android:theme="@style/NoStatus"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".NewEventPackage.NewEventActivity4"
+            android:theme="@style/NoStatus"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".NewEventPackage.NewEventActivity5"
+            android:theme="@style/NoStatus"
+            android:screenOrientation="portrait"/>
+
+
+        <activity
+            android:name="com.yalantis.ucrop.UCropActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoStatus" />
+
+        <activity android:name=".HomePackage.PhotoSelector"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoStatus"/>
+
+        <activity android:name=".HomePackage.AttendeesActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoStatus"/>
+
+
+
+        <activity android:name=".EventsPackage.EventAnalyticsAttendeesActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoStatus"/>
+        <activity android:name=".EventsPackage.EventAnalyticsRevenueActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoStatus"/>
+        <activity android:name=".NewEventPackage.NewEventProcessDescription" />
+
+    </application>
+
+</manifest>

@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <View
+        android:id="@+id/background_view"
+        android:layout_width="match_parent"
+        android:background="@color/colorAccent"
+        android:visibility="gone"
+        android:layout_height="wrap_content">
+
+
+
+    </View>
+
+
+
+
+
+
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        android:elevation="5dp"
+        android:layout_height="wrap_content">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/profile_image"
+            android:layout_width="42dp"
+            android:layout_height="42dp"
+
+
+
+
+            app:civ_border_color="#FF000000"
+            />
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/cv"
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="5dp"
+            app:cardCornerRadius="10dp"
+            app:cardBackgroundColor="#fff"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:padding="10dp"
+                android:layout_width="wrap_content"
+                android:orientation="vertical"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/user_name"
+                    android:textColor="#000"
+                    android:layout_width="wrap_content"
+                    android:text="Rahul"
+                    android:foreground="?selectableItemBackground"
+                    android:fontFamily="@font/azo"
+                    android:textSize="13sp"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:fontFamily="@font/azo"
+                    android:id="@+id/time"
+                    android:textSize="10sp"
+                    android:text="7:24 AM"
+                    android:textColor="#A3A3A3"
+                    android:layout_marginBottom="5dp"
+                    android:layout_height="wrap_content" />
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="wrap_content"
+                    app:cardCornerRadius="8dp"
+                    android:id="@+id/reply_cv"
+                    android:visibility="gone"
+                    app:cardBackgroundColor="#60E3E3E3"
+                    android:layout_marginBottom="5dp"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:padding="8dp"
+                        android:layout_width="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_height="wrap_content">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_height="wrap_content">
+
+                            <ImageView
+                                android:layout_marginTop="3dp"
+                                android:layout_marginLeft="0dp"
+                                android:layout_marginRight="2dp"
+                                android:layout_marginBottom="3dp"
+                                android:id="@+id/quote"
+                                android:background="@drawable/ic_quote"
+                                android:layout_width="wrap_content"
+
+
+                                android:layout_height="wrap_content" />
+
+                            <TextView
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginRight="10dp"
+                                android:layout_width="wrap_content"
+                                android:id="@+id/comment_admin_name"
+                                android:textColor="#000000"
+                                android:fontFamily="@font/azo"
+
+                                android:layout_height="wrap_content" />
+
+
+                        </LinearLayout>
+
+
+
+                        <TextView
+                            android:layout_marginLeft="20dp"
+                            android:layout_width="wrap_content"
+                            android:id="@+id/comment_admin_text"
+                            android:breakStrategy="simple"
+
+                            android:layout_height="wrap_content" />
+
+
+
+
+                    </LinearLayout>
+
+
+
+                </android.support.v7.widget.CardView>
+
+                <TextView
+                    android:textColor="#000"
+                    android:textSize="16sp"
+                    android:fontFamily="@font/azo"
+                    android:layout_width="wrap_content"
+                    android:text="BlogText"
+                    android:autoLink="web"
+                    android:breakStrategy="simple"
+
+                    android:id="@+id/user_comment"
+                    android:layout_height="wrap_content" />
+
+
+
+                    <FrameLayout
+                        android:layout_width="wrap_content"
+                        android:id="@+id/frame"
+                        android:layout_height="wrap_content">
+
+                        <LinearLayout
+
+                            android:id="@+id/like_comment"
+                            android:layout_width="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_height="wrap_content">
+
+                            <LinearLayout
+                                android:id="@+id/like"
+                                android:layout_width="wrap_content"
+                                android:orientation="horizontal"
+                                android:layout_height="wrap_content">
+
+                                <ImageView
+                                    android:layout_marginTop="5dp"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginRight="5dp"
+                                    android:background="@drawable/ic_heart"/>
+
+
+
+                                <TextView
+
+                                    android:paddingTop="3dp"
+                                    android:layout_width="wrap_content"
+                                    android:text="Like"
+                                    android:textColor="#A3A3A3"
+                                    android:fontFamily="@font/azo"
+                                    android:layout_height="wrap_content" />
+
+                            </LinearLayout>
+
+
+                            <TextView
+                                android:id="@+id/likeCount1"
+                                android:layout_marginRight="5dp"
+                                android:textColor="#000"
+                                android:paddingTop="3dp"
+                                android:layout_width="wrap_content"
+
+                                android:fontFamily="@font/azo"
+                                android:layout_height="wrap_content" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+
+                            android:id="@+id/dis_like_comment"
+                            android:layout_width="wrap_content"
+                            android:orientation="horizontal"
+
+                            android:layout_height="wrap_content">
+
+                            <ImageView
+                                android:id="@+id/dislike"
+                                android:layout_marginTop="5dp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="5dp"
+
+                                android:background="@drawable/ic_like"/>
+
+
+                            <TextView
+                                android:id="@+id/likeCount2"
+                                android:layout_marginRight="5dp"
+                                android:textColor="#000"
+                                android:paddingTop="3dp"
+                                android:layout_width="wrap_content"
+
+                                android:fontFamily="@font/azo"
+                                android:layout_height="wrap_content" />
+
+                        </LinearLayout>
+
+
+
+
+
+                    </FrameLayout>
+
+
+
+
+
+
+
+
+                
+                
+
+
+
+
+
+
+            </LinearLayout>
+
+
+
+        </android.support.v7.widget.CardView>
+
+    </LinearLayout>
+
+</FrameLayout>
+
+

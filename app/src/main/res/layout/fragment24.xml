@@ -1,0 +1,236 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card="http://schemas.android.com/tools"
+    android:id="@+id/content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+    <TextView
+        android:id="@+id/ddxr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/azo"
+        android:layout_marginTop="25dp"
+        android:layout_centerHorizontal="true"
+        android:text="ddxr Admin"
+        android:textColor="#000"
+        android:textSize="28sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ddxr"
+        android:layout_marginTop="37dp"
+        android:layout_marginStart="10dp"
+        android:fontFamily="@font/azo"
+        android:text="Company/Organisation Events Domain *"
+        android:textColor="#000"
+        android:textSize="18sp" />
+
+
+   <android.support.v7.widget.CardView
+       android:id="@+id/cv1"
+       android:layout_below="@+id/ddxr"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_marginHorizontal="8dp"
+       android:layout_marginTop="80dp"
+       app:cardCornerRadius="2dp"
+       app:cardUseCompatPadding="true">
+
+
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_marginBottom="7dp"
+           android:orientation="horizontal">
+
+           <TextView
+               android:layout_width="0dp"
+               android:layout_height="40dp"
+               android:layout_weight="1"
+               android:gravity="center"
+               android:text="Choose Domain"
+               android:textColor="@android:color/black"
+               android:textSize="15sp" />
+
+           <Spinner
+
+               android:id="@+id/spn1"
+               android:layout_width="0dp"
+               android:layout_height="40dp"
+               android:layout_weight="2">
+
+           </Spinner>
+
+
+       </LinearLayout>
+
+
+   </android.support.v7.widget.CardView>
+
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/cv1"
+        android:layout_marginTop="37dp"
+        android:layout_marginStart="10dp"
+        android:fontFamily="@font/azo"
+        android:text="Company/Organisation Type *"
+        android:textColor="#000"
+        android:textSize="18sp" />
+
+
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cv2"
+        android:layout_below="@+id/cv1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="8dp"
+        android:layout_marginTop="80dp"
+        app:cardCornerRadius="2dp"
+        app:cardUseCompatPadding="true">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="7dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="Choose Type"
+                android:textColor="@android:color/black"
+                android:textSize="15sp" />
+
+            <Spinner
+
+                android:id="@+id/spn2"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="2">
+
+            </Spinner>
+
+
+        </LinearLayout>
+
+
+    </android.support.v7.widget.CardView>
+
+
+    <TextView
+        android:id="@+id/tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/cv2"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="200dp"
+        android:fontFamily="@font/azo"
+        android:text="This Domain will be visible in every Event you'll add."
+        android:textColor="#000"
+        android:textSize="12sp" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv"
+        android:layout_marginStart="10dp"
+        android:fontFamily="@font/azo"
+        android:text="And the Domain cannot be changed in future."
+        android:textColor="#000"
+        android:textSize="12sp" />
+
+    <Button
+       android:id="@+id/next_viewpager"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_alignParentEnd="true"
+       android:layout_alignParentBottom="true"
+       android:layout_marginEnd="30dp"
+       android:layout_marginBottom="104dp"
+       android:background="@drawable/roundx"
+       android:text="NEXT"
+       android:textSize="20sp" />
+
+
+    <!--<TextView
+        android:id="@+id/textVie"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/cv2"
+        android:layout_marginTop="37dp"
+        android:layout_marginStart="10dp"
+        android:fontFamily="@font/azo"
+        android:text="College/University Details"
+        android:textColor="#000"
+        android:textSize="18sp"
+        android:visibility="invisible"/>
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cv3"
+        android:layout_below="@+id/cv2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="8dp"
+        android:layout_marginTop="80dp"
+        app:cardCornerRadius="2dp"
+        app:cardUseCompatPadding="true"
+        android:visibility="invisible">
+
+
+
+    <EditText
+        android:id="@+id/college_name"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:padding="5dp"
+        android:hint="Name"
+        android:layout_marginHorizontal="8dp"
+        android:focusable="false"
+        android:focusableInTouchMode="false"/>
+
+    </android.support.v7.widget.CardView>
+    
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cv4"
+        android:layout_below="@+id/cv3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="8dp"
+        android:layout_marginTop="10dp"
+        app:cardCornerRadius="2dp"
+        app:cardUseCompatPadding="true"
+        android:visibility="invisible">
+
+
+
+        <EditText
+            android:id="@+id/college_location"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:padding="5dp"
+            android:hint="City/District/town"
+            android:digits="abcdefghijklmnopqrstuvywxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+            android:layout_marginHorizontal="8dp"
+            android:focusable="false"
+            android:focusableInTouchMode="false"/>
+
+    </android.support.v7.widget.CardView>-->
+
+
+</RelativeLayout>
+

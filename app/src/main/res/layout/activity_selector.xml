@@ -1,0 +1,80 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/layout">
+
+
+
+    <TextView
+        android:id="@+id/ddxr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/azo"
+        android:layout_marginTop="25dp"
+        android:layout_centerHorizontal="true"
+        android:text="HotelLo Admin"
+        android:textColor="#000"
+        android:textSize="28sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ddxr"
+        android:layout_marginTop="120dp"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/azo"
+        android:text="Are you a "
+        android:textColor="#000"
+        android:textSize="22sp" />
+
+    <Button
+        android:id="@+id/club_button"
+        android:layout_below="@+id/textView"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/roundx"
+        android:layout_margin="20dp"
+        android:foreground="?selectableItemBackgroundBorderless"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Individual Hotel Owner" />
+
+    <Button
+        android:id="@+id/company_button"
+        android:layout_centerHorizontal="true"
+        android:layout_marginHorizontal="20dp"
+        android:background="@drawable/roundx"
+        android:foreground="?selectableItemBackgroundBorderless"
+        android:layout_below="@+id/club_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Hotel Chain" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_below="@+id/company_button"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="Or"
+        android:textColor="#000"
+        android:textSize="18sp"/>
+
+    <Button
+        android:id="@+id/others_button"
+        android:layout_below="@+id/textView7"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/roundx"
+        android:layout_margin="20dp"
+        android:foreground="?selectableItemBackgroundBorderless"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Other?" />
+
+
+</RelativeLayout>
+

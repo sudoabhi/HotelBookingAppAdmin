@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:fillViewport="true"
+    android:layout_width="match_parent">
+
+
+    <android.support.design.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ProgressBar
+            android:id="@+id/progress_bar"
+            android:layout_marginTop="80dp"
+            android:layout_gravity="center"
+            android:visibility="invisible"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="?android:attr/progressBarStyle"/>
+
+        <android.support.design.widget.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:elevation="8dp"
+            android:theme="@style/AppBarOverlay">
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="#fff"
+                app:title="New Announcement"
+                app:popupTheme="@style/PopupOverlay" />
+
+
+
+        </android.support.design.widget.AppBarLayout>
+
+
+        <RelativeLayout
+            app:layout_behavior="@string/appbar_scrolling_view_behavior"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@null"
+
+            >
+
+
+
+            <android.support.v7.widget.CardView
+                android:layout_marginTop="00dp"
+                android:minHeight="150dp"
+                android:background="#fff"
+                android:layout_width="match_parent"
+                android:id="@+id/post_blog"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="vertical"
+                    android:focusableInTouchMode="true"
+                    android:layout_margin="10dp"
+                    android:layout_height="wrap_content">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:text="Topic"
+                            android:textColor="#000"
+                            android:padding="5dp"
+                            android:fontFamily="@font/azo"
+                            android:textStyle="bold"
+                            android:textSize="20sp"
+                            android:layout_height="wrap_content" />
+
+                        <!--<ImageView
+                            android:id="@+id/call_filters"
+                            android:layout_width="wrap_content"
+                            android:background="@drawable/ic_brightness_7_black_24dp"
+                            android:layout_alignParentEnd="true"
+                            android:layout_margin="5dp"
+                            android:paddingLeft="10dp"
+                            android:paddingRight="5dp"
+                            android:paddingTop="5dp"
+                            android:paddingBottom="10dp"
+                            android:layout_alignParentTop="true"
+                            android:layout_height="wrap_content" />-->
+
+
+                    </RelativeLayout>
+
+
+
+                    <EditText
+                        android:layout_width="wrap_content"
+                        android:background="@null"
+                        android:id="@+id/post_blog_et"
+                        android:hint="What's on your mind"
+                        android:padding="5dp"
+                        android:textSize="17sp"
+                        android:fontFamily="@font/azo"
+                        android:layout_height="wrap_content">
+
+                        <requestFocus/>
+
+                    </EditText>
+
+
+
+
+                </LinearLayout>
+
+
+            </android.support.v7.widget.CardView>
+
+            <!--<Button
+                android:layout_below="@id/post_blog"
+                android:layout_width="wrap_content"
+                android:id="@+id/post_button"
+                android:layout_margin="10dp"
+
+                android:layout_alignParentEnd="true"
+                android:textColor="#fff"
+                android:background="#000F55"
+                android:text="Post"
+                android:textSize="18sp"
+                android:fontFamily="@font/azo"
+                android:layout_height="wrap_content" />-->
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:id="@+id/view"
+
+                android:layout_marginTop="1dp"
+                android:layout_marginBottom="3dp"
+                android:background="#A9A9A9"
+                android:layout_below="@id/post_blog">
+
+
+            </View>
+
+            <android.support.v7.widget.RecyclerView
+                android:layout_below="@id/view"
+                android:layout_width="match_parent"
+                android:id="@+id/my_recycler_view"
+                android:layout_height="wrap_content">
+
+            </android.support.v7.widget.RecyclerView>
+
+        </RelativeLayout>
+
+
+    </android.support.design.widget.CoordinatorLayout>
+
+
+
+
+
+
+
+</ScrollView>

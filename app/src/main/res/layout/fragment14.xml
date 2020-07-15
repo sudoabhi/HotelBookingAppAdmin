@@ -1,0 +1,125 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card="http://schemas.android.com/tools"
+
+    android:layout_width="match_parent"
+    android:paddingStart="8dp"
+    android:paddingEnd="8dp"
+    android:fillViewport="true"
+    android:layout_height="match_parent">
+
+
+    <FrameLayout
+        android:id="@+id/content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+
+    <TextView
+        android:id="@+id/ddxr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/azo"
+        android:layout_marginTop="25dp"
+        android:layout_centerHorizontal="true"
+        android:text="HotelLo Admin"
+        android:textColor="#000"
+        android:textSize="28sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ddxr"
+        android:layout_marginTop="37dp"
+        android:layout_marginStart="10dp"
+        android:fontFamily="@font/azo"
+        android:text="Hotel Room Category *"
+        android:textColor="#000"
+        android:textSize="18sp" />
+
+
+   <android.support.v7.widget.CardView
+       android:id="@+id/cv1"
+       android:layout_below="@+id/ddxr"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_marginStart="8dp"
+       android:layout_marginEnd="8dp"
+       android:layout_marginTop="80dp"
+       app:cardCornerRadius="2dp"
+       app:cardUseCompatPadding="true">
+
+
+       <LinearLayout
+           android:id="@+id/lay1"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:orientation="horizontal">
+
+           <TextView
+               android:layout_width="0dp"
+               android:minHeight="40dp"
+               android:layout_height="wrap_content"
+               android:layout_weight="1"
+               android:layout_marginStart="15dp"
+               android:layout_gravity="center_vertical"
+               android:gravity="center_vertical"
+               android:text="Choose Category"
+               android:textColor="@android:color/black"
+               android:textSize="15sp" />
+
+           <Spinner
+
+               android:id="@+id/spn1"
+               android:layout_gravity="center_vertical"
+               android:gravity="center_vertical"
+               android:layout_width="0dp"
+               android:minHeight="40dp"
+               android:layout_height="wrap_content"
+               android:layout_weight="2">
+
+           </Spinner>
+
+
+       </LinearLayout>
+
+
+   </android.support.v7.widget.CardView>
+
+
+    <Button
+       android:id="@+id/next_viewpager"
+        android:layout_below="@+id/cv1"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_alignParentEnd="true"
+       android:layout_marginEnd="30dp"
+        android:layout_marginTop="100dp"
+        android:backgroundTint="@color/secondGrey"
+        android:foreground="?selectableItemBackground"
+        android:background="@drawable/round"
+       android:text="NEXT"
+       android:textSize="20sp" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:indeterminate="true"
+        android:indeterminateTint="#000"
+        android:layout_height="wrap_content" />
+
+
+    </RelativeLayout>
+
+    </FrameLayout>
+
+</ScrollView>

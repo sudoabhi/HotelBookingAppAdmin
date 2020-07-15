@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+
+    tools:context="com.example.hotelloadmin.ScannerPackage.ScannerActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:background="#fff"
+        android:id="@+id/toolbar"
+        app:navigationIcon="@drawable/ic_back"
+        android:layout_height="?attr/actionBarSize"
+        android:text="Back to Home"
+        android:layout_width="match_parent"
+
+
+        />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ProgressBar
+            android:elevation="12dp"
+            android:padding="5dp"
+            android:id="@+id/progress_bar2"
+            android:visibility="visible"
+            android:layout_gravity="center"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            style="?android:attr/progressBarStyle"/>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:visibility="invisible"
+                android:id="@+id/LL_parent"
+                android:orientation="vertical"
+                android:layout_margin="20dp"
+                android:layout_height="match_parent">
+
+
+
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text=""
+                    android:textSize="19sp"
+                    android:layout_marginBottom="5dp"
+                    android:id="@+id/event_name"
+                    android:textColor="#563C5C"
+                    android:fontFamily="@font/azo"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text=""
+                    android:textSize="19sp"
+                    android:layout_marginBottom="5dp"
+                    android:id="@+id/ticket_name"
+                    android:textColor="#563C5C"
+                    android:fontFamily="@font/azo"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text=""
+                    android:textSize="19sp"
+                    android:textColor="#563C5C"
+                    android:id="@+id/team_name"
+                    android:fontFamily="@font/azo"
+                    android:layout_height="wrap_content" />
+
+
+
+
+
+                <de.hdodenhof.circleimageview.CircleImageView
+
+                    android:id="@+id/profile_image"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:layout_margin="30dp"
+                    android:layout_gravity="center_horizontal"
+                    app:civ_border_color="#000000"
+                    app:civ_border_width="2dp" />
+
+                <TextView
+                    android:layout_gravity="center_horizontal"
+                    android:layout_width="wrap_content"
+                    android:text=""
+                    android:textSize="18sp"
+
+                    android:id="@+id/user_name"
+                    android:fontFamily="@font/azo"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:layout_gravity="center_horizontal"
+                    android:layout_width="wrap_content"
+                    android:text=""
+                    android:textSize="18sp"
+                    android:id="@+id/roll_number"
+                    android:fontFamily="@font/azo"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:layout_gravity="center_horizontal"
+                    android:layout_width="wrap_content"
+                    android:text=""
+                    android:textSize="18sp"
+                    android:id="@+id/club_location"
+                    android:fontFamily="@font/azo"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:layout_gravity="center_horizontal"
+                    android:layout_width="wrap_content"
+                    android:text=""
+                    android:textSize="18sp"
+                    android:id="@+id/fees_paid"
+                    android:fontFamily="@font/azo"
+                    android:layout_height="wrap_content" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center_horizontal"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_margin="20dp"
+                        android:id="@+id/call"
+                        android:background="@drawable/ic_telephone"
+                        android:layout_height="wrap_content" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:background="@drawable/ic_gmail"
+                        android:id="@+id/mail"
+                        android:layout_margin="20dp"
+                        android:layout_height="wrap_content" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_margin="20dp"
+                        android:id="@+id/dm"
+                        android:background="@drawable/ic_message"
+                        android:layout_height="wrap_content" />
+
+
+
+                </LinearLayout>
+
+
+                <Button
+                    android:layout_marginTop="40dp"
+                    android:layout_marginBottom="20dp"
+                    android:layout_width="wrap_content"
+                    android:text="Scan next Booking"
+                    android:textColor="#fff"
+                    android:id="@+id/scan_next"
+                    android:textSize="21sp"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@drawable/chat_sdk_login_button_selector"
+                    android:layout_height="wrap_content" />
+
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:padding="10dp"
+                    android:layout_margin="10dp"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:orientation="vertical"
+                        android:padding="10dp"
+                        android:layout_margin="10dp"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:text=""
+                            android:textSize="15sp"
+                            android:textColor="@color/red"
+                            android:id="@+id/booked_timing"
+                            android:fontFamily="@font/azo"
+                            android:layout_height="wrap_content" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:text="Booking scanned on 20 March,2019 at 10:56 P.M."
+                            android:textSize="15sp"
+                            android:textColor="@color/red"
+                            android:id="@+id/scanned_timing"
+                            android:fontFamily="@font/azo"
+                            android:layout_height="wrap_content" />
+
+
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+
+
+
+            </LinearLayout>
+
+        </ScrollView>
+
+
+
+
+    </FrameLayout>
+
+
+
+
+    </LinearLayout>
+
+
+

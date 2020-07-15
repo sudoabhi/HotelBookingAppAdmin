@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_menu_home"
+            android:title="Home" />
+
+        <item
+            android:id="@+id/nav_history"
+            android:icon="@drawable/ic_menu_history"
+            android:title="Room History" />
+        <item
+            android:id="@+id/nav_create"
+            android:icon="@drawable/ic_menu_current"
+            android:title="Add Room" />
+
+        <item
+            android:id="@+id/posts"
+            android:icon="@drawable/ic_library_books_black_24dp"
+            android:title="Live Discussion" />
+        <item
+            android:id="@+id/nav_notif"
+            android:icon="@drawable/ic_menu_notif"
+            android:title="Custom Notifications" />
+        <item
+            android:id="@+id/nav_payment"
+            android:icon="@drawable/ic_menu_pay"
+            android:title="Payments" />
+    </group>
+
+    <item android:title="Communicate">
+        <menu>
+            <item
+                android:id="@+id/nav_feedback"
+                android:icon="@drawable/ic_menu_feed"
+                android:title="Send Feedback" />
+            <item
+                android:id="@+id/nav_faq"
+                android:icon="@drawable/ic_menu_faq"
+                android:title="FAQs" />
+            <item
+                android:id="@+id/nav_contactus"
+                android:icon="@drawable/ic_menu_contact"
+                android:title="Contact Us" />
+        </menu>
+    </item>
+
+</menu>
